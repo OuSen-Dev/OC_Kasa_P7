@@ -1,0 +1,122 @@
+/* General */
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+/* Title */
+
+.homeSection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 223px;
+    max-height: 223px;
+    min-height: 111px;
+}
+
+.homeSection p {
+    position: absolute;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.homeImg {
+    width: 90%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.homeImg img {
+    width: 100%;
+    height: 100%;
+    max-height: 223px;
+    min-height: 111px;
+    object-fit: cover;
+}
+
+/* Gallery */
+
+/* background rouge ? */
+
+.homeGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #F6F6F6;
+    border-radius: 25px;
+    width: 90%;
+    margin: 30px;
+}
+
+.location__token {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    overflow: hidden;
+    max-width: 340px;
+    width: 100%;
+    height: 100%;
+    max-height: 340px;
+    margin: 4.5%;
+    border-radius: 10px;
+}
+
+.location__img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.location__title {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.location__title span {
+    display: block;
+    padding: 0 20px 15px 15px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* Mobile Version */
+
+@media (max-width:768px) {
+    .homeSection{
+        height: 111px;
+        max-height: 223px;
+        min-height: 111px;
+        margin: 0;
+    }
+    .homeSection p{
+        font-size: 24px;
+        width: 59%;
+        left: 10%;
+    }
+    .homeImg{
+        border-radius: 10px;
+        height: 100%;
+    }
+    .homeImg img{
+        height: 100%;
+    }
+    .homeGallery{
+        background: none;
+        width: 100%;
+        margin: 10px;
+    }
+    .location__img{
+        width: 100%;
+        height: 255px;
+        max-width: 350px;
+    }
+} 
